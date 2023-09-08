@@ -2,6 +2,7 @@ package com.curso.android.app.trabajofinal.trabajofinal
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.curso.android.app.trabajofinal.trabajofinal.ViewModel.ComparaViewModel
+import com.curso.android.app.trabajofinal.trabajofinal.view.MainActivity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.test.StandardTestDispatcher
@@ -24,6 +25,7 @@ import org.junit.Rule
 class ViewModelUnitTest {
 
     private lateinit var viewModel : ComparaViewModel
+
 
     @get:Rule
     val instantTaskRule = InstantTaskExecutorRule()
@@ -104,6 +106,7 @@ class ViewModelUnitTest {
         assertEquals(true,iguales)
 
     }
+
 
 
 

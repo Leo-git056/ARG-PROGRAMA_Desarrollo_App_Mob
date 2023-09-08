@@ -6,8 +6,15 @@ plugins {
 android {
     namespace = "com.curso.android.app.trabajofinal.trabajofinal"
     compileSdk = 33
-
-
+    packaging {
+        resources.excludes.addAll(
+            listOf(
+                "META-INF/LICENSE.md",
+                "META-INF/LICENSE-notice.md",
+                 // other conflicting META-INF bits
+        )
+        )
+    }
     defaultConfig {
         applicationId = "com.curso.android.app.trabajofinal.trabajofinal"
         minSdk = 21
