@@ -18,7 +18,7 @@ class ComparaViewModel : ViewModel() {
     private var _palabra2 = MutableLiveData<String>("")
 
     val iguales : LiveData<Boolean> get() = _iguales
-    private var _iguales = MutableLiveData<Boolean>()
+    private var _iguales = MutableLiveData<Boolean>(true)
 
     fun setPalabra1(string: String){
         _palabra1.value = string
