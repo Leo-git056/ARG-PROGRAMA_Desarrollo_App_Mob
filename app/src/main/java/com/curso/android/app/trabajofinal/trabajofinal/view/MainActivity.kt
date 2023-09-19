@@ -5,7 +5,6 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 import com.curso.android.app.trabajofinal.trabajofinal.ViewModel.ComparaViewModel
-import com.curso.android.app.trabajofinal.trabajofinal.Model.ComparaModel
 import com.curso.android.app.trabajofinal.trabajofinal.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
